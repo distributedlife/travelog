@@ -70,10 +70,16 @@ blockquote {
 	@include column-break(avoid);
 
 	p {
-		font-family: $heading-font;
-		font-style: italic;
-		margin: 0;
-		@include adjust-font-size-to(22px); 
+		@include adjust-font-size-to(33px); 
+
+		letter-spacing: -2px;
+		line-height: 48px;
+		font-weight: bold;
+		// margin: 3em 2em;
+
+		font-family: $blockquote-font;
+		// margin: 0;
+		
 		margin: rhythm(3, 20px) 0 rhythm(3, 20px) 0; 		//  3 lines above / 3 lines below, based on font size
 	}
 }

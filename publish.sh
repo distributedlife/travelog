@@ -21,7 +21,7 @@ git pull --rebase
 rm -rf *
 
 # Dump in the exported html
-mv ../public/p2/* .
+mv ../public/travelog/* .
 cp -R ../redirects/* .
 
 git add .

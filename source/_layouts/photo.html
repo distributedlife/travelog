@@ -1,0 +1,17 @@
+{% capture root_url %}
+{{ site.root | strip_slash }}
+{% endcapture %}
+
+<!doctype html>
+<html lang="en" style="background: url(/images/{{ page.cover }}) no-repeat center center fixed; background-size: contain !important; background-color: black;">
+{% include head.html %}
+<body>
+{% include paginate.html %}
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='assets/js/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+</html>

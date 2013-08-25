@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://thoughtworks.github.io/p2
-title: P2 Magazine
-subtitle: Software Excellence @ ThoughtWorks
-author: The P2 Elves
+url: travel.distributedlife.com
+title: Notes
+subtitle: 
+author: Ryan Boucher
 simple_search: http://google.com/search
 description:
 
@@ -16,20 +16,20 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /p2/atom.xml
+subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: p2@thoughtworks.com
+email: 
 
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
-root: /p2
+root: /
 permalink: /article/:title/
 source: source
-destination: public/p2
+destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories

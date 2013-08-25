@@ -13,9 +13,15 @@ h1,h2,h3{
 	font-weight: 300;
 	color: #000;
 }
+html{
+	background-size: cover !important;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+}
 body{
 	font-family: $body-font;
-	margin: em-font(8px) em-font(11px) em-font(22px) em-font(11px);
+	margin: 0;
 	font-weight: 300;
 
 	b, strong{
@@ -26,33 +32,118 @@ body{
 		font-style: italic;
 	}
 }
-.cover{
-	@include animation(width, 500ms, ease-in-out);
-	//background: #efefef url(../img/issue_1_cover.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-clip: cover;
-	position: fixed;
-	height: 100%;
-	width: 0;
-	margin-left: -12080px;
+.topic-anchor {
+	position: absolute;
+	top: 0;
+	left: 5px;
 }
+.article-body {
+	img {
+		background: #FEFEFE;
+		border: 2px solid #FAFAFA;
+		box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+		margin: 5px;
+		padding: 15px;
+		opacity: 1;
+		width: 98%;
+	}
+}
+.cover-title {
+	h2 {
+		width: 100%;
+		position: absolute;
+		top: 15px;		
+
+		span {
+			padding-left: 0.2em;
+			padding-right: 0.2em;
+			overflow: hidden;
+		}
+	}
+
+	h2 span {
+		color: white;
+		font-family: 'Nothing You Could Do', cursive;
+		background: rgb(0, 0, 0); /* fallback color */
+		background: rgba(0, 0, 0, 0.7);
+		font-size: 3em;
+
+		-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-radius-topright: 5px;
+		-moz-border-radius-bottomright: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			width: 100%;
+			color: white;
+			font-family: 'Nothing You Could Do', cursive;
+			background: rgb(0, 0, 0); /* fallback color */
+			background: rgba(0, 0, 0, 0.7);
+			font-size: 2em;
+			padding-right: 0.6em;
+			padding-left: 0.6em;
+			padding-top: 0.2em;
+			padding-bottom: 0.2em;
+
+			a {
+				text-decoration: none;
+				color: $highlight;
+			}
+
+			a:hover {
+				color: $primary;
+			}
+		}
+
+		li:first-child {
+			padding-top: 0.6em;
+
+			-webkit-border-top-right-radius: 5px;
+			border-top-right-radius: 5px;
+			-moz-border-radius-topright: 5px;
+
+			-webkit-border-top-left-radius: 5px;
+			border-top-left-radius: 5px;
+			-moz-border-radius-topleft: 5px;
+		}
+		li:last-child {
+			padding-bottom: 0.4em;
+
+			-moz-border-radius-bottomright: 5px;
+			-webkit-border-bottom-right-radius: 5px;
+			border-bottom-right-radius: 5px;	
+
+			-moz-border-radius-bottomleft: 5px;
+			-webkit-border-bottom-left-radius: 5px;
+			border-bottom-left-radius: 5px;	
+		}
+
+		
+		position: absolute;
+		bottom: -25px;	
+		left: 5px;
+	}
+}
+
+
+
 .issue-notes{
 	border-bottom: 1px lighten($primary, 50%) solid;
 }
 .issues {
 	background: white;
-	padding: 32px 0 0 0;
+	// padding: 32px 0 0 0;
 
 	ul {
-		border-bottom: 1px lighten($primary, 50%) solid;
 		margin: 0;
-		padding: 10px 0;
 
 		li {
-
 			display: inline;
 
 			a{
@@ -70,74 +161,9 @@ body{
 		}
 	}
 }
-.table-of-contents{
-
-	article{
-		margin: em-font(15px) 0;
-		border-bottom: 1px lighten($primary, 50%) solid;
-		text-align: center;
-	}
-	.author-avatar{
-		float: none;
-		max-width: em-font(48px);
-	}
-	.article-number{
-		font-family: "Roboto Slab", serif;
-		font-style: italic;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: em-font(12px);
-    color: #ccc;
-    // max-width: em-font(72px);
-  }
-
-	.summary{
-
-		display: block;
-		padding: 0px 0 8px 0;
-
-		h3, p{
-
-      font-size: 12px;
-			margin: rhythm(1, 24px) 0 rhythm(1, 24px) 0;  
-      
-      .title {
-        text-transform: uppercase;
-      }
-      
-      .author {
-        color: #bbb;
-      }
-
-			a{
-				text-decoration: none;
-			}
-		}
-
-
-	}
-}
-.left-column {
-	margin: 0 0 em-font(20px) 0;
-	text-align: center;
-
-	.author{
-		padding: em-font(10px);
-		margin: 0;
-	}
-	.author-avatar{
-		max-width: em-font(112px);
-	}
-}
-.author-avatar{
-	background-color: whitesmoke;
-	-webkit-mask-image: url(../images/circle-img-mask.png);
-	-webkit-mask-size: 100% 100%;
-}
 article header{
-	border-bottom: 1px lighten($primary, 50%) solid;
-	margin-bottom: em-font(20px);
+	// border-bottom: 1px lighten($primary, 50%) solid;
+	// margin-bottom: em-font(20px);
 }
 
 article footer{
@@ -338,13 +364,10 @@ footer {
   }
   
 	body {
-		margin: em-font(0px) em-font(11px) em-font(22px) em-font(11px);
+		margin: 0;
 	}
 	.container {
 		min-width: em-font(586px);
-	}
-	.page{
-		margin-left: em-font(190px);
 	}
 	.table-of-contents{
 
