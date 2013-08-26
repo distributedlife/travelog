@@ -10,7 +10,7 @@ ol 						{ @include ordered-inside }
 ul 						{ @include unordered-inside }
 h1,h2,h3{
 	font-family: $heading-font;
-	font-weight: 300;
+	font-weight: 700;
 	color: #000;
 }
 html{
@@ -34,21 +34,52 @@ body{
 }
 .topic-anchor {
 	position: absolute;
-	top: 0;
+	top: 3px;
 	left: 5px;
+	font-size: 1.5em;
 }
 .article-body {
+	p.image {
+		text-align: center;
+	}
+
+	span.landscape {
+		img {
+			height: auto;
+		}
+	}
+	span.portrait {
+		img {
+			width: auto;
+		}
+	}
+	img {
+		background: #FEFEFE;
+		border: 2px solid #FAFAFA;
+		box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+		margin: 1px;
+		padding: 15px;
+		opacity: 1;
+	}
+}
+.portrait-photo {
+	padding-top: 2em;
+
 	img {
 		background: #FEFEFE;
 		border: 2px solid #FAFAFA;
 		box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
 		margin: 5px;
 		padding: 15px;
-		opacity: 1;
-		width: 98%;
+		opacity: 1;		
+		width: auto;
 	}
 }
 .cover-title {
+	img {
+		width: 100%;
+	}
+
 	h2 {
 		width: 100%;
 		position: absolute;
@@ -82,7 +113,7 @@ body{
 		li {
 			width: 100%;
 			color: white;
-			font-family: 'Nothing You Could Do', cursive;
+			font-family: $heading-font;
 			background: rgb(0, 0, 0); /* fallback color */
 			background: rgba(0, 0, 0, 0.7);
 			font-size: 2em;
@@ -388,7 +419,6 @@ footer {
 			top: 50%;
 			width: 100%;
 			margin-top: em-font(-36px);
-			// max-width: em-font(72px);
 		}
 	}
 	.cover{
@@ -411,7 +441,7 @@ footer {
 	}
 	h1 { 
 		@include adjust-font-size-to(38px); 
-		margin: rhythm(2, 38px) 0 rhythm(2, 38px) 0;  						// 3 lines below, based on font size
+		margin: rhythm(2, 38px) 0 0 0;  						// 3 lines below, based on font size
 	} 
 				
 	h2 { 

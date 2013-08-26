@@ -3,11 +3,12 @@
 {% endcapture %}
 
 <!doctype html>
-<html lang="en" style="background: url(/images/{{ page.cover }}) no-repeat center center fixed;">
+<html lang="en" style="background: url(/images/{{ page.cover }}) no-repeat center center fixed; background-size: cover !important; background-color: black;">
 {% include head.html %}
 <body>
 {% include paginate.html %}
 <div class='cover-title'>
+    {{content}}
     <h2><span>{{ page.title }}</span></h2>
     <ul>
     	<li><a href="/peru/1">Lima - First Thoughts</a></li>
