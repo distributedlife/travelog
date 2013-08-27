@@ -40,7 +40,6 @@ $(function() {
 </script>
 <script>
 $(document).ready(function (){
-
 	$(window).scroll(function () {
 		$("img").each(function() {
 			$(this).css({transform: 'translate(0px, 0px) scale(1)'});
@@ -49,7 +48,7 @@ $(document).ready(function (){
 				$("#lightbox").hide();
 			}
 
-			$(this).css('z-index', 999);;
+			$(this).css('z-index', 998);;
 		});
 	});
 
@@ -73,11 +72,11 @@ $(document).ready(function (){
 
 		if ($("#lightbox").is(':visible')) {
 			$("#lightbox").hide();
-			$(selected_image).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 999});
+			$(selected_image).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 998});
 
 			$("img").each(function() {
 				if (selected_image !== this) {
-					$(this).css('z-index', 999);;
+					$(this).css('z-index', 998);;
 				}
 			});
 		} else {
