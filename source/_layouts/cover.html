@@ -6,13 +6,18 @@
 <html lang="en" style="background: url(/images/{{ page.cover }}) no-repeat center center fixed; background-size: cover !important; background-color: black;">
 {% include head.html %}
 <body>
-{% include paginate.html %}
+<a id="next" href="{{ page.nxt }}" class="hide"></a>
+<script type="text/javascript">
+  key('right', function(){
+    window.open($("#next")[0].href, '_self', false);
+  });
+</script>
 <div class='cover'>
     <div class='toc'>
         {{content}}
     </div>
     <div class='title'>
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title }}&nbsp;&raquo;</h1>
     </div>
 </div>
 </body>

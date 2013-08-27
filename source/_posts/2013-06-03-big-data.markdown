@@ -3,7 +3,7 @@ layout: portrait
 permalink: /peru/2
 prev: /peru/1
 nxt: /peru/3
-cover: peru/inka.jpg
+issue: Peru
 ---
 
 ->![derp](/images/peru/inka.jpg)<-

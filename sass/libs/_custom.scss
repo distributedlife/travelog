@@ -32,6 +32,9 @@ body{
 		font-style: italic;
 	}
 }
+.hide {
+	display: none;
+}
 .topic-anchor {
 	position: absolute;
 	top: 3px;
@@ -75,6 +78,19 @@ body{
 		width: auto;
 	}
 }
+.landscape-photo {
+	padding-top: 2em;
+
+	img {
+		background: #FEFEFE;
+		border: 2px solid #FAFAFA;
+		box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+		margin: 5px;
+		padding: 15px;
+		opacity: 1;		
+		height: auto;
+	}
+}
 .cover {
 	border-top: black solid 1px;
 	background-color: white;
@@ -87,10 +103,10 @@ body{
 	float: right;
 	width: 20%;
 	height: 100%;
-	// padding-left: 1em;
-	// border-left: black dotted 2px;
 
 	h1 {
+		text-align: right;
+		padding-right: 1em;
 		padding-top: 0;
 		margin-top: 0.4em;
 		font-size: 4em;
@@ -116,9 +132,17 @@ body{
 
 	float: left;
 
+	font-size: 0.8em;
+	font-variant: small-caps;
+
+	padding-top: 0.6em;
+
 	ul {
+		padding-left: 0.4em;
+
 		li {
-			padding: 0.2em;
+			padding: 0;
+			margin: 0;
 		}
 		list-style: none;
 	}
