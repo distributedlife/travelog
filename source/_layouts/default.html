@@ -42,13 +42,11 @@ $(function() {
 $(document).ready(function (){
 	$(window).scroll(function () {
 		$("img").each(function() {
-			$(this).css({transform: 'translate(0px, 0px) scale(1)'});
-
 			if ($("#lightbox").is(':visible')) {
 				$("#lightbox").hide();
 			}
 
-			$(this).css('z-index', 998);;
+			$(this).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 1000});
 		});
 	});
 
@@ -72,11 +70,11 @@ $(document).ready(function (){
 
 		if ($("#lightbox").is(':visible')) {
 			$("#lightbox").hide();
-			$(selected_image).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 998});
+			$(selected_image).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 1000});
 
 			$("img").each(function() {
 				if (selected_image !== this) {
-					$(this).css('z-index', 998);;
+					$(this).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 998});
 				}
 			});
 		} else {
@@ -85,7 +83,7 @@ $(document).ready(function (){
 
 			$("img").each(function() {
 				if (selected_image !== this) {
-					$(this).css('z-index', 998);;
+					$(this).css({transform: 'translate(0px, 0px) scale(1)', 'z-index': 998});
 				}
 			});
 		}
