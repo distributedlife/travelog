@@ -5,6 +5,11 @@
 	margin: 0 auto;
 	width: 95%;
 }
+.wide-container {
+	@extend .clearfix;
+	margin: 0 auto;
+	width: 95%;
+}
 section 				{ @extend .clearfix; }
 ol 						{ @include ordered-inside }
 ul 						{ @include unordered-inside }
@@ -370,6 +375,9 @@ footer {
 	.container {
 		width: 80%;
 	}
+	.wide-container {
+		width: 70%;
+	}
 }
 
 
@@ -383,6 +391,9 @@ footer {
 		margin: 0;
 	}
 	.container {
+		min-width: em-font(586px);
+	}
+	.wide-container {
 		min-width: em-font(586px);
 	}
 	.table-of-contents{
