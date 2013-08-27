@@ -1,7 +1,7 @@
 /* ::Layout styles - Layouts hold one or more modules together. */
 /* ------------------------------------------------------------ */
 .container {
-	@extend .clearfix;
+	@extend .pie-clearfix;
 	margin: 0 auto;
 	width: 95%;
 }
@@ -10,7 +10,7 @@
 	margin: 0 auto;
 	width: 95%;
 }
-section 				{ @extend .clearfix; }
+section 				{ @extend .pie-clearfix; }
 ol 						{ @include ordered-inside }
 ul 						{ @include unordered-inside }
 h1,h2,h3{
@@ -37,11 +37,22 @@ body{
 		font-style: italic;
 	}
 }
+#lightbox {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    -webkit-transition: all .3s ease-in-out;
+}
 .hide {
 	display: none;
 }
 .topic-anchor {
-	position: absolute;
+	position: fixed;
 	top: 3px;
 	left: 5px;
 	font-size: 1.5em;
@@ -68,6 +79,10 @@ body{
 		margin: 1px;
 		padding: 15px;
 		opacity: 1;
+		-webkit-transition: all .3s ease-in-out;
+		position: relative;
+		z-index: 998;
+		cursor: -webkit-zoom-in;
 	}
 }
 .portrait-photo {

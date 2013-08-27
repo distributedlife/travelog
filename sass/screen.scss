@@ -44,7 +44,7 @@
 // Use pie-clearfix if you need clearfixing that doesn't use overflow: hidden
 .pie-clearfix 		{ @include pie-clearfix; }
 
-
+.legacy-pie-clearfix { @include legacy-pie-clearfix; }
 
 // OTHER EXTENDS
 
