@@ -6,11 +6,11 @@ title: Peru
 cover: peru/cover.jpg
 nxt: /peru/1
 ---
-- &nbsp;[01 &raquo; Tacos in Los Angeles](/peru/1)
-- &nbsp;[04 &raquo; Sonar taxis and Lima](/peru/2)
-- &nbsp;[08 &raquo; This barren land](/peru/3)
-- &nbsp;[11 &raquo; Sexism and Peru](/peru/4)
-- &nbsp;[12 &raquo; The Inka vs. the Spanish](/peru/5)
-- &nbsp;[15 &raquo; A short walk](/peru/6)
-- &nbsp;[17 &raquo; Four days floating the Rio Ucayali](/peru/7)
-- &nbsp;[22 &raquo; Seven days in Iquitos](/peru/8)
+- &nbsp;[p01 &raquo; Tacos in Los Angeles](/peru/1)
+- &nbsp;[p04 &raquo; Sonar taxis and Lima](/peru/2)
+- &nbsp;[p08 &raquo; This barren land](/peru/3)
+- &nbsp;[p11 &raquo; Sexism and Peru](/peru/4)
+- &nbsp;[p12 &raquo; The Inka vs. the Spanish](/peru/5)
+- &nbsp;[p15 &raquo; A short walk](/peru/6)
+- &nbsp;[p17 &raquo; Four days floating the Rio Ucayali](/peru/7)
+- &nbsp;[p22 &raquo; Seven days in Iquitos](/peru/8)
