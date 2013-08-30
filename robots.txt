@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: travel.distributedlife.com/sitemap.xml 

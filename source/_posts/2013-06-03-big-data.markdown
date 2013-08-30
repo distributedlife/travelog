@@ -1,9 +1,0 @@
----
-layout: portrait
-permalink: /peru/2
-prev: /peru/1
-nxt: /peru/3
-issue: Peru
----
-
-->![derp](/images/peru/inka.jpg)<-
