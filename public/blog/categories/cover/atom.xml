@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cover | Notes]]></title>
+  <link href="travel.distributedlife.com/blog/categories/cover/atom.xml" rel="self"/>
+  <link href="travel.distributedlife.com/"/>
+  <updated>2013-08-30T16:14:38+10:00</updated>
+  <id>travel.distributedlife.com/</id>
+  <author>
+    <name><![CDATA[Ryan Boucher]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Peru]]></title>
+    <link href="travel.distributedlife.com/peru/cover"/>
+    <updated>2013-06-01T00:00:00+10:00</updated>
+    <id>travel.distributedlife.com/peru/index</id>
+    <content type="html"><![CDATA[<ul>
+<li>&nbsp;<a href="/peru/1">p01 &raquo; Tacos in Los Angeles</a></li>
+<li>&nbsp;<a href="/peru/2">p04 &raquo; Sonar taxis and Lima</a></li>
+<li>&nbsp;<a href="/peru/3">p08 &raquo; This barren land</a></li>
+<li>&nbsp;<a href="/peru/4">p11 &raquo; Sexism and Peru</a></li>
+<li>&nbsp;<a href="/peru/5">p12 &raquo; The Inka vs. the Spanish</a></li>
+<li>&nbsp;<a href="/peru/6">p15 &raquo; A short walk</a></li>
+<li>&nbsp;<a href="/peru/7">p17 &raquo; Four days floating the Rio Ucayali</a></li>
+<li>&nbsp;<a href="/peru/8">p22 &raquo; Seven days in Iquitos</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
