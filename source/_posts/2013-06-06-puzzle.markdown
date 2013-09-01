@@ -2,5 +2,5 @@
 layout: landscape
 permalink: /peru/5
 prev: /peru/4
-cover: peru/iquitos.jpg
+cover: peru/iquitos.JPG
 ---

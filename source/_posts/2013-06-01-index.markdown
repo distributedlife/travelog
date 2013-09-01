@@ -3,7 +3,7 @@ layout: cover
 category: cover
 permalink: /peru/cover
 title: Peru
-cover: peru/cover.jpg
+cover: peru/cover.JPG
 nxt: /peru/1
 ---
 - &nbsp;[p01 &raquo; Tacos in Los Angeles](/peru/1)

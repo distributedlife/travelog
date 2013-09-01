@@ -5,4 +5,4 @@ prev: /peru/3
 nxt: /peru/5
 issue: Peru
 ---
-![Iquitos](/images/peru/iquitos.jpg)
+![Iquitos](/images/peru/iquitos.JPG)

@@ -24,6 +24,6 @@ I met up with Sarah and Dan, Scotty's friends who were happy to guide me around.
 
 I arrived in Lima and brushed off every taxi driver before being told that bus doesn't run to the airport any more. The taxi trip was an true experience, full pelt, peculiar road choices (I checked his route as we drove on my own map), the stupendous amounts of traffic and merging sections that take one seething mass of cars and turn them into a slightly narrower seething mass. I wish I recorded the video. I'll try recording it on the way home. The trip also gave me a look into how Lima could have been. We drive past a sign, LIMA in big bold letters, grass fills the islands between the two lanes, trees line the edge. The road stretches on, the grass is pale and not looked after. The trees don't exist. One side of the road is the Rio Rimac and poor adobe dwellings, the other side are slightly better houses, the shift in quality is easily distinguishable as the house have been completed.
 
-<p class="image"><span class="landscape"><img src="/images/peru/cusco.jpg" alt="Statue with Graphitti in Lima"></span></p>
+<p class="image"><span class="landscape"><img src="/images/peru/cusco.JPG" alt="Statue with Graphitti in Lima"></span></p>
 
 I get dropped off at the main plaza. It's 830 in the morning, I sit on the steps in front of the cathedral and soak in the sounds of the city. The murmur of society, the hum of transport, the gentle honking of sonar-taxies. I am here.
