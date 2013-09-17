@@ -1,8 +1,8 @@
 ---
 layout: landscape
 permalink: /peru/arequipa
-image: arequipa.JPG
+image: arequipa.jpg
 category: peru
 title: Arequipa
 ---
-![Arequipa](/images/peru/arequipa.JPG)
+![Arequipa](/images/peru/arequipa.jpg)

@@ -1,7 +1,7 @@
 ---
 layout: landscape
 permalink: /peru/young-boy-in-boat
-image: iquitos.JPG
+image: boy-boat-amazon.jpg
 category: peru
 title: Young boy in boat
 ---
