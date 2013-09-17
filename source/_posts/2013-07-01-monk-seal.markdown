@@ -1,0 +1,8 @@
+---
+layout: landscape
+category: hawaii
+permalink: /hawaii/waikiki-monk-seal
+title: Monk Seal at Waikiki
+image: monk-seal.jpg
+---
+![Monk Seal at Waikiki Beach](/images/hawaii/monk-seal.jpg)

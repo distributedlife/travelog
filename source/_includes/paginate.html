@@ -1,5 +1,5 @@
 <nav class="paginate">
-  {% for post in site.categories.peru reversed %}
+  {% for post in site.categories[page.category] reversed %}
     {% if next == true %}
       <a id="next" href="{{post.url}}" class="next">&#9654;</a>
       <script type="text/javascript">

@@ -3,5 +3,4 @@ layout: cover
 category: cover
 permalink: /peru/cover
 title: peru
-cover: peru/cover.JPG
 ---

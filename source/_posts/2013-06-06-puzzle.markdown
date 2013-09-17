@@ -1,7 +1,7 @@
 ---
 layout: landscape
 permalink: /peru/iquitos_two
-cover: peru/iquitos.JPG
+image: iquitos.JPG
 category: peru
 title: Iquitos Again
 ---

@@ -1,7 +1,6 @@
 ---
 layout: cover
 category: cover
-permalink: /usa/cover
-title: usa
-cover: usa/cover.jpg
+permalink: /hawaii/cover
+title: hawaii
 ---

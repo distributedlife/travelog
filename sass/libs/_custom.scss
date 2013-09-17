@@ -13,8 +13,29 @@
 .index {
 	@extend .clearfix;
 	margin: 0 0;
-	margin-left: 5%;
+	margin-left: 10%;
 	width: 95%;
+
+	h1 {
+		text-align: right;
+	}
+	a.region {
+		font-variant: small-caps;
+		color: $secondary;
+		font-size: 0.8em;
+	}
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+.article-break {
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 section 				{ @extend .pie-clearfix; }
 ol 						{ @include ordered-inside }
@@ -58,6 +79,10 @@ header {
 			color: $highlight;
 		}
 	}
+}
+.read-more {
+	margin-top: -20px;
+	text-align: right;
 }
 .cover-lead {
 	padding-top: 5px;
@@ -113,6 +138,10 @@ header {
 	top: 3px;
 	left: 5px;
 	font-size: 1.5em;
+
+	li {
+		display:block !important;
+	}
 }
 .article-body {
 	p.image {
@@ -199,12 +228,12 @@ header {
 	-webkit-column-gap:1em;
 	-moz-column-gap:1em;
 
-	width: 75%;
+	width: 50%;
 	height: 100%;
 
 	float: left;
 
-	font-size: 0.8em;
+	font-size: 1em;
 	font-variant: small-caps;
 
 	padding-top: 0.6em;

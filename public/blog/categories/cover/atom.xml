@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: cover | Notes]]></title>
-  <link href="travel.distributedlife.com/blog/categories/cover/atom.xml" rel="self"/>
-  <link href="travel.distributedlife.com/"/>
-  <updated>2013-09-17T11:05:31+10:00</updated>
-  <id>travel.distributedlife.com/</id>
+  <title><![CDATA[Category: cover | Spewing]]></title>
+  <link href="www.distributedlife.com/travel/blog/categories/cover/atom.xml" rel="self"/>
+  <link href="www.distributedlife.com/travel/"/>
+  <updated>2013-09-17T16:33:10+10:00</updated>
+  <id>www.distributedlife.com/travel/</id>
   <author>
     <name><![CDATA[Ryan Boucher]]></name>
     
@@ -14,19 +14,19 @@
 
   
   <entry>
-    <title type="html"><![CDATA[usa]]></title>
-    <link href="travel.distributedlife.com/usa/cover"/>
+    <title type="html"><![CDATA[hawaii]]></title>
+    <link href="www.distributedlife.com/travel/hawaii/cover"/>
     <updated>2013-07-01T00:00:00+10:00</updated>
-    <id>travel.distributedlife.com/usa/index</id>
+    <id>www.distributedlife.com/travel/hawaii/index</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[peru]]></title>
-    <link href="travel.distributedlife.com/peru/cover"/>
+    <link href="www.distributedlife.com/travel/peru/cover"/>
     <updated>2013-06-01T00:00:00+10:00</updated>
-    <id>travel.distributedlife.com/peru/index</id>
+    <id>www.distributedlife.com/travel/peru/index</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
