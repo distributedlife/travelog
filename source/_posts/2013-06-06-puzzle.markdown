@@ -1,8 +1,8 @@
 ---
 layout: landscape
-permalink: /peru/iquitos_two
+permalink: /peru/young-boy-in-boat
 image: iquitos.JPG
 category: peru
-title: Iquitos Again
+title: Young boy in boat
 ---
-![Iquitos](/images/peru/iquitos.JPG)
+![Iquitos](/images/peru/boy-boat-amazon.jpg)
