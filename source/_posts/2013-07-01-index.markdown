@@ -3,5 +3,5 @@ layout: cover
 category: cover
 permalink: /usa/cover
 title: usa
-cover: usa/cover.JPG
+cover: usa/cover.jpg
 ---
