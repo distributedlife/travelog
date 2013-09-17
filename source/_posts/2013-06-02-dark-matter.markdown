@@ -1,18 +1,8 @@
 ---
 layout: post
 title: First Thoughts
-subtitle: 
-permalink: /peru/1
-byline: Ryan Boucher
-page: 1
-issue: Peru
-issuelink: /peru/cover
-prev: /peru/cover
-nxt: /peru/2
-authors:
-    - name: Ryan Boucher
-      twitter: distributedlife
-      avatar: ryan-avatar.jpg
+permalink: /peru/first-thoughts
+category: peru
 ---
 After barely pausing for customs I was promptly asked if I wanted to buy a CD of The Rolling Stones latest album. It's still in it's plastic wrapper he assured me. I let him know that I didn't have anything to play it. He seemed to remember that iPods existed and wandered off.
 

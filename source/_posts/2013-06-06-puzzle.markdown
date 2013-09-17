@@ -1,6 +1,8 @@
 ---
 layout: landscape
-permalink: /peru/5
-prev: /peru/4
+permalink: /peru/iquitos_two
 cover: peru/iquitos.JPG
+category: peru
+title: Iquitos Again
 ---
+![Iquitos](/images/peru/iquitos.JPG)

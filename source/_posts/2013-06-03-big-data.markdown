@@ -1,9 +1,8 @@
 ---
 layout: portrait
-permalink: /peru/2
-prev: /peru/1
-nxt: /peru/3
-issue: Peru
+permalink: /peru/machu-pichu
+title: Machu Pichu
+category: peru
 ---
 
 ->![derp](/images/peru/inka.jpg)<-

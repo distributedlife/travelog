@@ -6,21 +6,26 @@
 <html lang="en" style="background: url(/images/{{ page.cover }}) no-repeat center center fixed; background-size: cover !important; background-color: black;">
 {% include head.html %}
 <body>
-<a id="next" href="{{ page.nxt }}" class="hide"></a>
+<div class='cover'>
+    <div class='toc'>
+        {% for post in site.categories[page.title] reversed %}
+            <p>&nbsp;<a href="{{post.permalink}}">p{{ forloop.index }} &raquo; {{post.title}}</a></p>
+        {% endfor %}
+    </div>
+    <div class='title'>
+        {% for post in site.categories[page.title] reversed %}
+            {% if forloop.first %}
+                <a id="next" href="{{post.permalink}}"><h1>{{page.title}}&nbsp;&raquo;</h1></a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+</body>
 <script type="text/javascript">
   key('right', function(){
     window.open($("#next")[0].href, '_self', false);
   });
 </script>
-<div class='cover'>
-    <div class='toc'>
-        {{content}}
-    </div>
-    <div class='title'>
-        <a href="{{page.nxt}}"><h1>{{ page.title }}&nbsp;&raquo;</h1></a>
-    </div>
-</div>
-</body>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {

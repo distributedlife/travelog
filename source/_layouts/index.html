@@ -1,0 +1,51 @@
+{% capture root_url %}
+{{ site.root | strip_slash }}
+{% endcapture %}
+
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+	<header>
+		<a class="topic-anchor" href="/index">Travel</a>
+	</header>
+	<nav>
+
+	</nav>
+	<div class="cover-lead">
+		{% for post in site.categories.cover %}
+			<div class="lead-item">
+				<a href="{{post.url}}">
+					<img src="/images/{{ post.cover }}"></img>
+					<p class="cover-title">{{ post.title }}</p>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+	<div id="lightbox"></div>
+	<div class="index">
+		{% for post in site.posts %}
+			{% unless post.category == "cover" %}
+				<h2>{{post.title}}</h2>
+				<section class="page">
+					<article>
+						<div class="article-body">{{ post.content }}</div>
+					</article>
+				</section>
+				Read more from <a href="/{{latest.category}}/cover">{{ post.category | capitalize }}</a>
+			{% endunless %}
+		{% endfor %}
+	</div>
+</body>
+<script type="text/javascript">
+  key('right', function(){
+    window.open($("#next")[0].href, '_self', false);
+  });
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='assets/js/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+</html>

@@ -1,7 +1,8 @@
 ---
 layout: landscape
-permalink: /peru/3
-prev: /peru/2
-nxt: /peru/4
+permalink: /peru/arequipa
 cover: peru/arequipa.JPG
+category: peru
+title: Arequipa
 ---
+![Arequipa](/images/peru/arequipa.JPG)

@@ -1,8 +1,7 @@
 ---
 layout: landscape-frame
-permalink: /peru/4
-prev: /peru/3
-nxt: /peru/5
-issue: Peru
+permalink: /peru/iquitos
+category: peru
+title: Iquitos
 ---
 ![Iquitos](/images/peru/iquitos.JPG)
