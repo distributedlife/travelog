@@ -26,12 +26,15 @@
 		text-decoration: underline;
 	}
 }
-
+img {
+	max-width: 100%;
+}
 .copy {
 	font-variant: small-caps;
 }
 
 footer {
+	border-top: 1px lighten($primary, 50%) solid;
 	padding: 0 5px;
 	p {
 		text-align: right;
@@ -68,7 +71,6 @@ a:hover {
 
 .more-from {
 	border-top: 1px lighten($primary, 50%) solid;
-	border-bottom: 1px lighten($primary, 50%) solid;
 
 	margin: 5px;
 	-webkit-column-count: 2;
@@ -280,12 +282,12 @@ header {
 	}
 }
 .cover {
+	margin: 5px;
+
 	h1 {
 		margin: 0;
 		font-size: 4em;
-		text-align: right;
 		text-transform: capitalize;
-		padding-right: 5px;
 	}
 }
 .title {
@@ -309,11 +311,7 @@ header {
 .cover-title {
 	text-transform: uppercase;
 }
-.toc {	
-	column-count: 2;
-	-webkit-column-count: 2;
-	-moz-column-count: 2;
-
+.toc {
 	column-gap: 5px;
 	-webkit-column-gap: 5px;
 	-moz-column-gap: 5px;
@@ -696,9 +694,38 @@ div.normal-gist {
 	}
 	.paginate{
 		opacity: 1;
-    a {
-      position: fixed;
-    }
+    	a {
+      	position: fixed;
+    	}
+	}
+
+
+	.cover {
+		article {
+			margin: 0 0 0 25%;
+			width: 75%;
+
+			.index-article {
+				display:inline-block;
+				float: right;
+			}
+
+			h1 {
+				float: left;
+			}
+
+			.toc {
+				clear: left;
+
+				column-count: 1 !important;
+				-webkit-column-count: 1 !important;
+				-moz-column-count: 1 !important;
+			}
+		}
+
+		h1 {
+			text-align: left;
+		}
 	}
 }
 #bottom-pages {
@@ -706,6 +733,22 @@ div.normal-gist {
 }
 
 @media screen and (max-width: em-font(1024px)) {
+	.toc {
+		clear: left;
+
+		column-count: 2;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+	}
+	.cover {
+		h1 {
+			text-align: right;
+		}
+	}
+
+
+
+
   .paginate {
     a { 
       position: absolute;

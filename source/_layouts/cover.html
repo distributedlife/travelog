@@ -10,13 +10,13 @@
         <a href="/index">{{site.title}}</a>
     </div>
     <div class="cover">
-        <h1>{{page.title}}</h1>
         <section class="page">
             <article>
                 <div class="index-article">
                     <img src="{{page.max}}"/>
                 </div>
             </article>
+            <h1>{{page.title}}</h1>
             <div class='toc'>
                 {% for post in site.categories[page.title] reversed %}
                     {% if forloop.first %}
@@ -26,6 +26,9 @@
                 {% endfor %}
             </div>
         </section>
+        <footer>
+            <p class="copy">by ryan boucher</p>
+        </footer>
     </div>
 </div>
 </body>
