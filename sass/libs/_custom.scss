@@ -280,10 +280,6 @@ header {
 	}
 }
 .cover {
-	img {
-		margin: 5px;
-		width: 50%;
-	}
 	h1 {
 		margin: 0;
 		font-size: 4em;
@@ -314,8 +310,6 @@ header {
 	text-transform: uppercase;
 }
 .toc {	
-	float: left;
-	
 	column-count: 2;
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
