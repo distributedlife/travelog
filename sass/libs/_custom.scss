@@ -57,6 +57,9 @@ a:hover {
 }
 
 .more-from {
+	border-top: 1px lighten($primary, 50%) solid;
+
+	margin: 5px;
 	-webkit-column-count: 2;
 	-moz-column-count: 2;
 	column-count: 2;
@@ -593,9 +596,9 @@ div.normal-gist {
 // Eg for 800px
 @media screen and (min-width: em-font(767px)) {
 	.more-from {
-		-webkit-column-count: 3;
-		-moz-column-count: 3;
-		column-count: 3;
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
 	}
   #bottom-pages {
     display: block;

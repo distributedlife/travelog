@@ -4,4 +4,5 @@ category: cover
 permalink: /los_angeles/cover
 title: los angeles
 thumb: /images/los_angeles/cover.jpg
+max: /images/los_angeles/cover.jpg
 ---
