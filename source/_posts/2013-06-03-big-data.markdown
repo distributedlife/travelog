@@ -3,6 +3,7 @@ layout: portrait
 permalink: /peru/machu-pichu
 title: Machu Pichu
 category: peru
+thumb: /images/peru/inka.jpg
 ---
 
 ->![derp](/images/peru/inka.jpg)<-

@@ -6,37 +6,34 @@
 <html lang="en">
 {% include head.html %}
 <body>
-	<nav class="issues">
-        <ul class="clearfix topic-anchor">
-            <li class="active"><a href="/index">{{site.title}}</a></li>
-            <li class="active"><a href="/index">forth</a></li>
-            <li class="active"><a href="/index">what</a></li>
-            <li class="active"><a href="/index">seen</a></li>
-        </ul>
-    </nav>
-	<div class="cover-lead">
-		{% for post in site.categories.cover %}
-			<div class="lead-item">
-				<a href="{{post.url}}">
-					<img src="/images/{{post.title}}/cover.jpg"></img>
-					<p class="cover-title">{{ post.title }}</p>
-				</a>
-			</div>
-		{% endfor %}
-	</div>
-	<div id="lightbox"></div>
+	<div class="anchor">
+        <a href="/index">{{site.title}}</a>
+    </div>
 	<div class="index">
-		{% for post in site.posts limit:5 %}
-			{% unless post.category == "cover" %}
-				<h1><a href="{{post.url}}">{{post.title}}</a> <a class="region" href="/{{post.category}}/cover">{{ post.category }}</a></h1>
-				<section class="page">
-					<article>
-						<div class="article-body">{{ post.content }}</div>
-					</article>
-				</section>
-				<p class="article-break">⁂</p>
-			{% endunless %}
-		{% endfor %}
+		{% assign post = site.posts.first %}
+		<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+		<section class="page">
+			<article>
+				<div class="article-body">
+					{{ post.content }}
+					<div class="publication-date">
+						<span><strong>published:</strong> {{post.date | date: "%A, %B %d, %Y" | downcase }}</span>
+					</div>
+				</div>
+				<div class="more-from">
+					<p class="leader">more from other places:</a></p>
+					{% for more in site.categories.cover %}
+						<div class="thumb">
+							<a href="{{more.url}}">
+								<img src="/images/{{more.title}}/cover.jpg"></img>
+								<p class="cover-title">{{ more.title }}</p>
+							</a>
+						</div>
+					{% endfor %}
+					<br>
+				</div>
+			</article>
+		</section>
 	</div>
 </body>
 <script type="text/javascript">

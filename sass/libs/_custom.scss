@@ -12,17 +12,12 @@
 }
 .index {
 	@extend .clearfix;
-	margin: 0 0;
-	margin-left: 10%;
-	width: 95%;
+	margin: 0 auto;
+	width: 100%;
 
 	h1 {
 		text-align: right;
-	}
-	a.region {
-		font-variant: small-caps;
-		color: $secondary;
-		font-size: 0.8em;
+		padding-right: 5px;
 	}
 	a {
 		text-decoration: none;
@@ -30,6 +25,81 @@
 	a:hover {
 		text-decoration: underline;
 	}
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.anchor {
+	margin-left: 5px;
+	font-size: 1.5em;
+	font-variant: small-caps;
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+}
+.article-body {
+	.publication-date {
+		margin-top: -1em;
+		text-align: right;
+	}	
+}
+
+.publication-date {
+	font-variant: small-caps;
+	margin-right: 5px;
+}
+
+.more-from {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 5px; 
+	-webkit-column-rule: 0px dotted black;
+	-moz-column-count: 2;
+	-moz-column-gap: 5px;  
+	-moz-column-rule: 0px dotted black;
+	column-count: 2;
+	column-gap: 5px; 
+	column-rule: 0px dotted black;
+
+	-webkit-break-inside: avoid-column;
+
+	p {
+		margin: 0;
+	}
+	a {
+		font-variant: small-caps;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	ul {
+		list-style: none;
+	}
+}
+
+.leader {
+	column-span: all;
+	-webkit-column-span: all;
+	-moz-column-span: all;
+	font-size: 2em;
+	font-variant: small-caps;
+}
+
+.thumb {
+	width: 100%;
+	min-height: 100px;
+	height: 100px;
+	max-height: 100px;
+}
+.covers {
+	clear:both;
 }
 .article-break {
 	font-size: 3em;
@@ -464,6 +534,36 @@ div.normal-gist {
   #start-reading {
     display: none;
   }
+
+  	h1 { 
+		@include adjust-font-size-to(22px); 
+		margin: rhythm(2, 24px) 0 0 0;  						// 3 lines below, based on font size
+	}
+
+	h2 { 
+		@include adjust-font-size-to(20px); 
+		margin: rhythm(4, 30px) 0 rhythm(2, 30px) 0;  			// 4 lines above / 2 lines below, based on font size 
+	}
+
+	h3 { 
+		@include adjust-font-size-to(18px); 
+		margin: rhythm(2, 22px) 0 rhythm(2, 22px) 0;  			// 2 lines above / 2 lines below, based on font size 
+	} 
+
+	h4 { 
+		@include adjust-font-size-to(16px); 
+		margin: 0 0 rhythm(1, 20px) 0;  						// 1 lines below, based on font size 
+	} 
+
+	h5 { 
+		@include adjust-font-size-to(14px); 
+		margin: 0 0 rhythm(1, 18px) 0;  						// 1 lines below, based on font size 
+	} 
+
+	h6 { 
+		@include adjust-font-size-to(12px); 
+		margin: 0 0 rhythm(1, 16px) 0;  						// 1 lines below, based on font size 
+	} 	
 }
 
 @media screen and (min-width: em-font(480px)) {
@@ -474,7 +574,7 @@ div.normal-gist {
 		width: 70%;
 	}
 	.index {
-		width: 70%;
+		width: 100%;
 	}
 }
 
