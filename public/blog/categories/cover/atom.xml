@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cover | Spewing]]></title>
   <link href="www.distributedlife.com/travel/blog/categories/cover/atom.xml" rel="self"/>
   <link href="www.distributedlife.com/travel/"/>
-  <updated>2013-09-18T14:34:54+10:00</updated>
+  <updated>2013-09-18T15:34:47+10:00</updated>
   <id>www.distributedlife.com/travel/</id>
   <author>
     <name><![CDATA[Ryan Boucher]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[los angeles]]></title>
+    <link href="www.distributedlife.com/travel/los_angeles/cover"/>
+    <updated>2013-08-01T00:00:00+10:00</updated>
+    <id>www.distributedlife.com/travel/los_angeles/index</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[hawaii]]></title>

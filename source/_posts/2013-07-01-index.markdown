@@ -3,4 +3,5 @@ layout: cover
 category: cover
 permalink: /hawaii/cover
 title: hawaii
+thumb: /images/hawaii/cover.jpg
 ---
