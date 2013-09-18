@@ -3,26 +3,29 @@
 {% endcapture %}
 
 <!doctype html>
-<html lang="en" style="background: url({{page.max}}) no-repeat center center fixed; background-size: cover !important; background-color: black;">
+<html lang="en">
 {% include head.html %}
 <body>
-    <nav class="issues">
-        <ul class="clearfix">
-            <li class="active topic-anchor"><a href="/index">{{site.title}}</a></li>
-        </ul>
-    </nav>
-    <div class='cover'>
-    <div class='toc'>
-        {% for post in site.categories[page.title] reversed %}
-            <p>&nbsp;<a href="{{post.permalink}}">&raquo; {{post.title}}</a></p>
-        {% endfor %}
+    <div class="anchor">
+        <a href="/index">{{site.title}}</a>
     </div>
-    <div class='title'>
-        {% for post in site.categories[page.title] reversed %}
-            {% if forloop.first %}
-                <a id="next" href="{{post.permalink}}"><h1>{{page.title}}&nbsp;&raquo;</h1></a>
-            {% endif %}
-        {% endfor %}
+    <div class="cover">
+        <h1>{{page.title}}</h1>
+        <section class="page">
+            <article>
+                <div class="index-article">
+                    <img src="{{page.max}}"/>
+                </div>
+            </article>
+            <div class='toc'>
+                {% for post in site.categories[page.title] reversed %}
+                    {% if forloop.first %}
+                        <a id="next" class="hide" href="{{post.permalink}}"></a>
+                    {% endif %}
+                    <p>&rarr; &nbsp;<a href="{{post.permalink}}">{{post.title}}</a></p>
+                {% endfor %}
+            </div>
+        </section>
     </div>
 </div>
 </body>

@@ -18,29 +18,34 @@
 					<h1><a href="{{post.url}}">{{post.title}}</a></h1>
 					<section class="page">
 						<article>
-							<div class="article-body">
+							<div class="index-article">
 								{{ post.content }}
 								<div class="publication-date">
 									<span><strong>published:</strong> {{post.date | date: "%A, %B %d, %Y" | downcase }}</span>
 								</div>
-							</div>
-							<div class="more-from">
-								<p class="leader">elsewhere</a></p>
-								{% for more in site.categories.cover %}
-									<div class="thumb">
-										<a href="{{more.url}}">
-											<img src="{{more.thumb}}"></img>
-											<p class="cover-title">{{ more.title }}</p>
-										</a>
-									</div>
-								{% endfor %}
-								<br>
 							</div>
 						</article>
 					</section>
 				{% endunless %}
 			{% endunless %}
 		{% endfor %}
+		<article>
+			<div class="more-from">
+				<p class="leader">elsewhere</a></p>
+				{% for more in site.categories.cover %}
+					<div class="thumb">
+						<a href="{{more.url}}">
+							<img src="{{more.thumb}}"></img>
+							<p class="cover-title">{{ more.title }}</p>
+						</a>
+					</div>
+				{% endfor %}
+			</div>
+		</article>
+		<footer>
+			<p class="copy">by ryan boucher</p>
+		</footer>
+		<div>
 	</div>
 </body>
 <script type="text/javascript">
