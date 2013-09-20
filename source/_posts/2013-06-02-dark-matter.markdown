@@ -1,8 +1,9 @@
 ---
 layout: post
 title: First Thoughts
-permalink: /peru/first-thoughts
 category: peru
+type: article
+permalink: /peru/first-thoughts
 subtitle: On first arriving in Los Angeles
 ---
 After barely pausing for customs I was promptly asked if I wanted to buy a CD of The Rolling Stones latest album. It's still in it's plastic wrapper he assured me. I let him know that I didn't have anything to play it. He seemed to remember that iPods existed and wandered off.

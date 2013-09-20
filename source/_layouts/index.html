@@ -7,7 +7,7 @@
 {% include head.html %}
 <body>
 	<div class="anchor">
-        <a href="/index">{{site.title}}</a>
+        <a href="/index">the latest {{site.title}}</a>
     </div>
 	<div class="index">
 		{% assign stop = "false" %}
@@ -15,15 +15,44 @@
 			{% unless stop == "true" %}
 				{% unless post.category == "cover" %}
 					{% assign stop = "true" %}
-					<h1><a href="{{post.url}}">{{post.title}}</a></h1>
 					<section class="page">
 						<article>
-							<div class="index-article">
-								{{ post.content }}
-								<div class="publication-date">
-									<span><strong>published:</strong> {{post.date | date: "%A, %B %d, %Y" | downcase }}</span>
+							{% if post.type == "article" %}
+								<div class="container">
+									<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+									{{post.excerpt}}
+									<br/><br/>
+									<a href="{{post.url}}">Continue reading?</a>
+									<br/><br/>
+									<div class="post-matter">
+										<div class="publication-date">
+											<span>
+												<strong>when:</strong><small> {{post.date | date: "%A, %B %d, %Y" | downcase }}</small>
+											</span>
+										</div>
+										<div class="copy posted-under">
+											<span>
+												<strong>where:</strong> {{post.category}}
+											</span>
+										</div>
+									</div>
 								</div>
-							</div>
+							{% else %}
+								<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+								<div class="index-article">
+									{{ post.content }}
+									<div class="publication-date">
+										<span>
+											<strong>when: </strong><small>{{post.date | date: "%A, %B %d, %Y" | downcase }}</small>
+										</span>
+									</div>
+									<div class="copy posted-under">
+										<span>
+											<strong>where:</strong> {{post.category}}
+										</span>
+									</div>
+								</div>
+							{% endif %}
 						</article>
 					</section>
 				{% endunless %}

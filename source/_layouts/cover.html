@@ -19,17 +19,24 @@
             <h1>{{page.title}}</h1>
             <div class='toc'>
                 {% for post in site.categories[page.title] reversed %}
+                    {% assign at_least_one = "true" %}
                     {% if forloop.first %}
                         <a id="next" class="hide" href="{{post.permalink}}"></a>
                     {% endif %}
-                    <p>&rarr; &nbsp;<a href="{{post.permalink}}">{{post.title}}</a></p>
+                    <p>
+                        &rarr; &nbsp;
+                        <a href="{{post.permalink}}">{{post.title}} <span class="subtle copy">{{post.type}}</span></a>
+                    </p>
                 {% endfor %}
+                {% unless at_least_one == "true" %}
+                    <p class="notice">i have no posts from {{page.title }}. i will though, be patient.</p>
+                {% endunless %}
             </div>
         </section>
-        <footer>
-            <p class="copy">by ryan boucher</p>
-        </footer>
     </div>
+    <footer>
+        <p class="copy">by ryan boucher</p>
+    </footer>
 </div>
 </body>
 <script type="text/javascript">

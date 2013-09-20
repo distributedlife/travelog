@@ -1,8 +1,10 @@
 ---
 layout: landscape
 category: hawaii
+type: photo
 permalink: /hawaii/waikiki-monk-seal
 title: Monk Seal at Waikiki
 image: monk-seal.jpg
+taken: 18/1/2013
 ---
 ![Monk Seal at Waikiki Beach](/images/hawaii/monk-seal.jpg)
