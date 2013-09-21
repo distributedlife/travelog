@@ -663,6 +663,11 @@ div.normal-gist {
 		@include adjust-font-size-to(12px); 
 		margin: 0 0 rhythm(1, 16px) 0;  						// 1 lines below, based on font size 
 	} 	
+
+	.anchor {
+		margin-bottom: 10px;
+		text-align: center;
+	}
 }
 
 @media screen and (min-width: em-font(480px)) {
@@ -875,12 +880,12 @@ div.normal-gist {
       font-size: 18px;
       &.prev{
         left: 0;
-        margin-left: 20px;
+        margin-left: 5px;
         padding-right: 4px;
       }
       &.next{
         right: 0;
-        margin-right: 20px;
+        margin-right: 5px;
         padding-left: 4px;
       }
       &:hover{
@@ -895,9 +900,12 @@ div.normal-gist {
       }
     }
   }
+  footer {
+  	margin-bottom: 35px;
+  }
   #bottom-pages {
-    margin-top: -110px;
     display: block;
+
     .paginate {
       text-align: center;
       a {

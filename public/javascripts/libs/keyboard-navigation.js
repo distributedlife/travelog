@@ -11,8 +11,5 @@ var move_to_previous_article = function() {
     }
 };
 
-$("#next").on("swiperight", move_to_next_article);
-// $("#prev").hammer().on("swipeleft", move_to_previous_article);
-
 key('right', move_to_next_article);
 key('left', move_to_previous_article);
