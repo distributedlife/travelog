@@ -1,5 +1,5 @@
 ---
-layout: portrait
+layout: show-large
 permalink: /peru/machu-pichu
 title: Machu Picchu
 category: peru

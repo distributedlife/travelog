@@ -1,5 +1,5 @@
 ---
-layout: landscape
+layout: landscape-frame
 category: hawaii
 type: photo
 permalink: /hawaii/waikiki-monk-seal

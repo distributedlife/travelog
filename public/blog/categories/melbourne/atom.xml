@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: melbourne | images and words]]></title>
+  <link href="www.distributedlife.com/travel/blog/categories/melbourne/atom.xml" rel="self"/>
+  <link href="www.distributedlife.com/travel/"/>
+  <updated>2013-09-21T17:21:12+10:00</updated>
+  <id>www.distributedlife.com/travel/</id>
+  <author>
+    <name><![CDATA[Ryan Boucher]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Stomp'n for Fish at Altona Beach]]></title>
+    <link href="www.distributedlife.com/travel/animals/pelicans-at-altona"/>
+    <updated>2013-09-01T00:00:00+10:00</updated>
+    <id>www.distributedlife.com/travel/animals/pelicans-at-altona</id>
+    <content type="html"><![CDATA[<p style="text-align:center;"> <img src="http://farm6.staticflickr.com/5528/9847964895_ccee3b203e_b.jpg" alt="Young boy in boat" /></p>
+]]></content>
+  </entry>
+  
+</feed>

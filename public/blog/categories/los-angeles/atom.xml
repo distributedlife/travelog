@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: los angeles | images and words]]></title>
+  <link href="www.distributedlife.com/travel/blog/categories/los-angeles/atom.xml" rel="self"/>
+  <link href="www.distributedlife.com/travel/"/>
+  <updated>2013-09-21T17:21:12+10:00</updated>
+  <id>www.distributedlife.com/travel/</id>
+  <author>
+    <name><![CDATA[Ryan Boucher]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[LAX]]></title>
+    <link href="www.distributedlife.com/travel/los-angeles/lax"/>
+    <updated>2013-08-02T00:00:00+10:00</updated>
+    <id>www.distributedlife.com/travel/los-angeles/derp</id>
+    <content type="html"><![CDATA[<p>I barely paused at customs and ended up outside the terminal. I man wandered up and asked if I wanted to buy a CD of The Rolling Stones latest album. It&rsquo;s still in it&rsquo;s plastic wrapper he assured me. I let him know that I didn&rsquo;t have anything to play it. He looked confused and then seemed to remember that iPods existed before wandering off.</p>
+]]></content>
+  </entry>
+  
+</feed>

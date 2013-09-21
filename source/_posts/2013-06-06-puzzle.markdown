@@ -1,7 +1,6 @@
 ---
-layout: landscape
+layout: portrait
 permalink: /peru/young-boy-in-boat
-image: boy-boat-amazon.jpg
 category: peru
 type: photo
 title: Young boy in boat
@@ -9,4 +8,4 @@ thumb: "http://farm3.staticflickr.com/2856/9782423795_505d3b28d5_m.jpg"
 large: "http://farm3.staticflickr.com/2856/9782423795_505d3b28d5_b.jpg"
 max: "http://farm3.staticflickr.com/2856/9782423795_9089a9a32c_k.jpg"
 ---
-![Young boy in boat](http://farm3.staticflickr.com/2856/9782423795_9089a9a32c_k.jpg)
+-> ![Young boy in boat](http://farm3.staticflickr.com/2856/9782423795_9089a9a32c_k.jpg) <-

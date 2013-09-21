@@ -6,6 +6,7 @@
 <html lang="en">
 {% include head.html %}
 <body>
+	<div id="lightbox"></div>
 	<div class="anchor">
         <a href="/index">the latest {{site.title}}</a>
     </div>
@@ -25,14 +26,14 @@
 									<a href="{{post.url}}">Continue reading?</a>
 									<br/><br/>
 									<div class="post-matter">
-										<div class="publication-date">
+										<div class="copy publication-date">
 											<span>
 												<strong>when:</strong><small> {{post.date | date: "%A, %B %d, %Y" | downcase }}</small>
 											</span>
 										</div>
 										<div class="copy posted-under">
 											<span>
-												<strong>where:</strong> {{post.category}}
+												<strong>where:</strong> <a href="/{{post.category}}/cover">{{post.category}}</a>
 											</span>
 										</div>
 									</div>
@@ -41,14 +42,14 @@
 								<h1><a href="{{post.url}}">{{post.title}}</a></h1>
 								<div class="index-article">
 									{{ post.content }}
-									<div class="publication-date">
+									<div class="copy publication-date">
 										<span>
 											<strong>when: </strong><small>{{post.date | date: "%A, %B %d, %Y" | downcase }}</small>
 										</span>
 									</div>
 									<div class="copy posted-under">
 										<span>
-											<strong>where:</strong> {{post.category}}
+											<strong>where:</strong> <a href="/{{post.category}}/cover">{{post.category}}</a>
 										</span>
 									</div>
 								</div>
@@ -76,11 +77,6 @@
 		</footer>
 	</div>
 </body>
-<script type="text/javascript">
-  key('right', function(){
-    window.open($("#next")[0].href, '_self', false);
-  });
-</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {

@@ -21,14 +21,14 @@
         <h1>{{ page.title }}</h1>
     </header>
     {{ content }}
-    <div class="publication-date">
+    <div class="copy publication-date">
 		<span>
 			<strong>when: </strong><small>{{page.date | date: "%A, %B %d, %Y" | downcase }}</small>
 		</span>
 	</div>
 	<div class="copy posted-under">
 		<span>
-			<strong>where:</strong> {{page.category}}
+			<strong>where:</strong> <a href="/{{post.category}}/cover">{{page.category}}</a>
 		</span>
 	</div>
 </div>

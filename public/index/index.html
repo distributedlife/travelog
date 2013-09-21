@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Notes from Travelog</title>
 
 <link rel="shortcut icon" type="image/png" href="/favicon.png" />
@@ -14,9 +14,11 @@
 <link href="http://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet" type="text/css">
 <script src="http://modernizr.com/downloads/modernizr-2.5.3.js"></script>
 <script src="/assets/js/keymaster.min.js"></script>
+<script src="/javascripts/libs/hammer.jquery.min.js"></script>
 </head>
 
 <body>
+	<div id="lightbox"></div>
 	<div class="anchor">
         <a href="/index">the latest images and words</a>
     </div>
@@ -33,18 +35,18 @@
 					<section class="page">
 						<article>
 							
-								<h1><a href="/hawaii/waikiki-monk-seal">Monk Seal at Waikiki</a></h1>
+								<h1><a href="/animals/pelicans-at-altona">Stomp'n for Fish at Altona Beach</a></h1>
 								<div class="index-article">
-									<p><img src="/images/hawaii/monk-seal.jpg" alt="Monk Seal at Waikiki Beach" /></p>
+									<p style="text-align:center;"> <img src="http://farm6.staticflickr.com/5528/9847964895_ccee3b203e_b.jpg" alt="Young boy in boat" /></p>
 
-									<div class="publication-date">
+									<div class="copy publication-date">
 										<span>
-											<strong>when: </strong><small>monday, july 01, 2013</small>
+											<strong>when: </strong><small>sunday, september 01, 2013</small>
 										</span>
 									</div>
 									<div class="copy posted-under">
 										<span>
-											<strong>where:</strong> hawaii
+											<strong>where:</strong> <a href="/melbourne/cover">melbourne</a>
 										</span>
 									</div>
 								</div>
@@ -68,9 +70,22 @@
 		
 			
 		
+			
+		
+			
+		
+			
+		
 		<article>
 			<div class="more-from">
 				<p class="leader">elsewhere</a></p>
+				
+					<div class="thumb">
+						<a href="/melbourne/cover">
+							<img src="/images/melbourne/cover.jpg"></img>
+							<p class="cover-title">melbourne</p>
+						</a>
+					</div>
 				
 					<div class="thumb">
 						<a href="/los_angeles/cover">
@@ -100,11 +115,6 @@
 		</footer>
 	</div>
 </body>
-<script type="text/javascript">
-  key('right', function(){
-    window.open($("#next")[0].href, '_self', false);
-  });
-</script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">
 if (typeof jQuery == 'undefined') {
