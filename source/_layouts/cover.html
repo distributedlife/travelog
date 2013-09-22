@@ -13,7 +13,10 @@
         <section class="page">
             <article>
                 <div class="index-article">
-                    <img src="{{page.max}}"/>
+                    <img src="{{page.thumb}}" data-src="{{page.large}}" data-src-retina="{{page.max}}"></img>
+                    <noscript>
+                        <img src="{{page.large}}" />
+                    </noscript>
                 </div>
             </article>
             <h1>{{page.title}}</h1>

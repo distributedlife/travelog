@@ -4,6 +4,7 @@ permalink: /peru/machu-pichu
 title: Machu Picchu
 category: peru
 type: photo
-thumb: /images/peru/inka.jpg
+thumb: "/images/peru/inka.jpg"
+large: "/images/peru/inka.jpg"
+max: "/images/peru/inka.jpg"
 ---
-->![derp](/images/peru/inka.jpg)<-

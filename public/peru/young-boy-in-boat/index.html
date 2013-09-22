@@ -76,13 +76,12 @@
 	<header>
         <h1>Young boy in boat</h1>
     </header>
-    <section class="page">
-	<article>
-	    <div class="portrait-photo"><p style="text-align:center;"> <img src="http://farm3.staticflickr.com/2856/9782423795_9089a9a32c_k.jpg" alt="Young boy in boat" /></p>
-</div>
-	</article>
-</section>
-
+    <p style="text-align:center">
+        <img src="http://farm3.staticflickr.com/2856/9782423795_505d3b28d5_m.jpg" data-src="http://farm3.staticflickr.com/2856/9782423795_505d3b28d5_b.jpg" data-src-retina="http://farm3.staticflickr.com/2856/9782423795_9089a9a32c_k.jpg"></img>
+        <noscript>
+            <img src="http://farm3.staticflickr.com/2856/9782423795_505d3b28d5_b.jpg" />
+        </noscript>
+    </p>
     <div class="copy publication-date">
 		<span>
 			<strong>when: </strong><small>thursday, june 06, 2013</small>
@@ -158,21 +157,7 @@ if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Cscript src='assets/js/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-41328116-1', 'thoughtworks.github.io');
-ga('send', 'pageview');
-</script>
-<script>
-$(function() {
-    setTimeout(function() {
-        $("<span>&nbsp;</span>").appendTo(".cover");
-    }, 100);
-});
-</script>
 <script src="/javascripts/libs/image-zoom.js"></script>
+<script src="/javascripts/libs/jquery.unveil.min.js"></script>
+<script src="/javascripts/libs/do-unveil.js"></script>
 </html>

@@ -22,9 +22,11 @@
 								<div class="container">
 									<h1><a href="{{post.url}}">{{post.title}}</a></h1>
 									{{post.excerpt}}
+									
 									<br/><br/>
 									<a href="{{post.url}}">Continue reading?</a>
 									<br/><br/>
+
 									<div class="post-matter">
 										<div class="copy publication-date">
 											<span>
@@ -41,7 +43,14 @@
 							{% else %}
 								<h1><a href="{{post.url}}">{{post.title}}</a></h1>
 								<div class="index-article">
-									{{ post.content }}
+
+									<p style="text-align:center">
+										<img src="{{post.thumb}}" data-src="{{post.large}}" data-src-retina="{{post.max}}"></img>
+										<noscript>
+											<img src="{{post.max}}" />
+										</noscript>
+									</p>
+
 									<div class="copy publication-date">
 										<span>
 											<strong>when: </strong><small>{{post.date | date: "%A, %B %d, %Y" | downcase }}</small>
@@ -65,7 +74,12 @@
 				{% for more in site.categories.cover %}
 					<div class="thumb">
 						<a href="{{more.url}}">
-							<img src="{{more.thumb}}"></img>
+
+							<img src="{{more.thumb}}" data-src="{{more.thumb}}" data-src-retina="{{more.thumb}}"></img>
+							<noscript>
+  								<img src="{{more.thumb}}" />
+							</noscript>
+						
 							<p class="cover-title">{{ more.title }}</p>
 						</a>
 					</div>
@@ -83,4 +97,6 @@ if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Cscript src='assets/js/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
+<script src="/javascripts/libs/jquery.unveil.min.js"></script>
+<script src="/javascripts/libs/do-unveil.js"></script>
 </html>

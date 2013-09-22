@@ -4,5 +4,6 @@ category: cover
 permalink: /peru/cover
 title: peru
 thumb: /images/peru/cover.jpg
+large: /images/peru/cover.jpg
 max: /images/peru/cover.jpg
 ---

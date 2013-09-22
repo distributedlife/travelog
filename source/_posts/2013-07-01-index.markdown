@@ -4,5 +4,6 @@ category: cover
 permalink: /hawaii/cover
 title: hawaii
 thumb: /images/hawaii/cover.jpg
+large: /images/hawaii/cover.jpg
 max: /images/hawaii/cover.jpg
 ---
