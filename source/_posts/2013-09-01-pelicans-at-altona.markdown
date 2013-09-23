@@ -1,6 +1,6 @@
 ---
-layout: landscape-frame
-permalink: /animals/pelicans-at-altona
+layout: portrait
+permalink: /melbourne/pelicans-at-altona
 category: melbourne
 type: photo
 title: Stomp'n for Fish at Altona Beach
